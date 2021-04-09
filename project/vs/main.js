@@ -94,11 +94,13 @@ async function process(rawText) {
 	    response = `openning ${rawText.substring(5)}`;
     }
 	if (!response) {
-        if (text === "") return "I didn't get it. Try again";
-        const resultArray = await retrieveSearchResults(rawText);
-        if(resultArray[0].text!==undefined){ response = resultArray[0].text }
-        else { response = resultArray[1].text }
-		console.log(resultArray);
+        // if (text === "") return "I didn't get it. Try again";
+        // const resultArray = await retrieveSearchResults(rawText);
+        // if(resultArray[0].text!==undefined){ response = resultArray[0].text }
+        // else { response = resultArray[1].text }
+		// console.log(resultArray);
+        const response = await retrieveSearchResults(rawText);
+		console.log(response);
 	}
     return response;
 }
@@ -106,23 +108,30 @@ async function process(rawText) {
 const retrieveSearchResults = async (searchTerm) => {
     const wikiSearchString = getWikiSearchString(searchTerm);
     const wikiSearchResults = await requestData(wikiSearchString);
-    let resultArray = [];
-    if (wikiSearchResults.hasOwnProperty("query")) {
-        resultArray = processWikiResults(wikiSearchResults.query.pages);
-    }
-    return resultArray;
+	console.log(wikiSearchResults);
+	return wikiSearchResults;
+    // let resultArray = [];
+    // if (wikiSearchResults.hasOwnProperty("query")) {
+    //     resultArray = processWikiResults(wikiSearchResults.query.pages);
+    // }
+    // return resultArray;
 };
 
 const getWikiSearchString = (searchTerm) => {
-    const searchString = encodeURI(`https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${searchTerm}&gsrlimit=2&prop=pageimages|extracts&explaintext&exsentences=1&exlimit=max&format=json&origin=*`);
-    return searchString;
+	const url = `http://api.wolframalpha.com/v1/result?appid=26Q368-9Q9ERTXHP6&i=${searchTerm.replaceAll(" ", "+")}`;
+    return url;
+    // const url = encodeURI(`https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${searchTerm}&gsrlimit=2&prop=pageimages|extracts&explaintext&exsentences=1&exlimit=max&format=json&origin=*`);
+    // return url;
 };
   
-const requestData = async (searchString) => {
+const requestData = async (url) => {
     try {
-        const response = await fetch(searchString);
-        const data = await response.json();
+        const data = await fetch(url);
+		console.log(data);
         return data;
+        // const response = await fetch(url);
+        // const data = await response.json();
+        // return data;
     } catch (err) {
         console.error(err);
     }
