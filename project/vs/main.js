@@ -118,7 +118,7 @@ const retrieveSearchResults = async (searchTerm) => {
 };
 
 const getWikiSearchString = (searchTerm) => {
-	const url = `http://api.wolframalpha.com/v1/result?appid=26Q368-9Q9ERTXHP6&i=${searchTerm.replaceAll(" ", "+")}`;
+	const url = `https://api.wolframalpha.com/v1/result?appid=26Q368-9Q9ERTXHP6&i=${searchTerm.replaceAll(" ", "+")}`;
     return url;
     // const url = encodeURI(`https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${searchTerm}&gsrlimit=2&prop=pageimages|extracts&explaintext&exsentences=1&exlimit=max&format=json&origin=*`);
     // return url;
