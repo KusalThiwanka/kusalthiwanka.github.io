@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Assistant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Ask Me Anything</h1>
+      </header>
+      <main>
+        <div class="row">
+          <div class="col text-center">
+            <button id="startBtn" class="btn btn-primary">Start</button>
+          </div>
+        </div>
+        <div class="input-group question">
+          <span class="input-group-text" id="basic-addon1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+              <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"></path>
+              <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"></path>
+            </svg>
+          </span>
+          <input id="input" type="text" class="form-control" aria-label="Input group example" aria-describedby="basic-addon1" height="12">
+        </div>
+        <div id="reply_section" class="row justify-content-center">
+          <div class="col-md-12 col-xl-12 chat">
+            <div class="card">
+              <div class="card-body msg_card_body">
+                <div class="d-flex justify-content-start mb-4">
+                  <div class="img_cont_msg">
+                    <img src="boy.png" class="rounded-circle user_img_msg">
+                  </div>
+                  <div id="question" class="msg_cotainer"> </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div id="answer" class="msg_cotainer_send"> </div>
+                  <div class="img_cont_msg">
+                    <img src="bot.png" class="rounded-circle user_img_msg">
+                  </div>
+                </div>
+                <a href="#" onclick="stopTalking()"><span class="badge badge-danger">Stop</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>Voice Assistant</footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

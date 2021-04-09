@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+header h1 {
+    color: black;
+}
+
+main {
+    width: 50%;
+    min-width: 300px;
+}
+
+#startBtn {
+    margin: 20px auto;
+    align-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    height: 1rem;
+    font-size: 12px;
+}
+
+#q {
+    left: 0;
+    background-color: #92cbf1;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+#a {
+    right: 0;
+    background-color: #a6e7ff;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+.chat{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.msg_card_body{
+    overflow-y: auto;
+}
+.container{
+    align-content: center;
+}
+.user_img_msg{
+    height: 40px;
+    width: 40px;
+    border:1.5px solid #f5f6fa;
+
+}
+.img_cont_msg{
+        height: 40px;
+        width: 40px;
+}
+.msg_cotainer{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #82ccdd;
+    padding: 10px;
+    position: relative;
+}
+.msg_cotainer_send{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #78e08f;
+    padding: 10px;
+    position: relative;
+}
+
