@@ -24,6 +24,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -34,6 +35,7 @@
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="button_jittery.css">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -98,20 +100,13 @@
                     </ul>
                 </div>
                 <div class="col-md-7">
-                    <h2>I'm Kusal Thiwanka</h2>
-                    <p>I'm an Electronic Designer, Web-Developer, Mobile App Developer and UI/UX designer creating
-                        awesome products for my clients all around the globe. Let's start scrolling and learn more about
-                        me.</p>
-                    <span style="text-align: center;"><button class="btn" onclick="download()"><i class="icon-download3"></i> - Download Resume</button></span>
-                    <p>
-                    <ul class="fh5co-social-icons">
-                        <li><a href="https://twitter.com/KusalThiwanka"><i class="icon-twitter2"></i></a></li>
-                        <li><a href="https://www.facebook.com/kusal.thiwanka"><i class="icon-facebook2"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/kusal-thiwanka/"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="https://github.com/KusalThiwanka"><i class="icon-github2"></i></a></li>
-                        <li><a href="https://stackoverflow.com/users/11021308/kusal-thiwanka"><i class="icon-stackoverflow"></i></a></li>
-                    </ul>
+                    <h2>Kusal Thiwanka</h2>
+                    <p style="font-size:1em;">I am a web developer with two years of experience developing large-scale web applications. 
+                        I'm utilizing my limited knowledge to solve practical problems in the real world and getting opportunities to step beyond my comfort zone 
+                        and extend my expertise while providing significant service to the community.<br><br>
+                        I am looking for opportunities to improve my skills while providing to the world what they need. Cheers!<br>
                     </p>
+                    <span style="text-align: center; margin-left: 15px;" class="button-jittery"><button class="button-jittery animate_info_btn" onclick="download_resume()"><i class="icon-download3"></i> - Download Resume</button></span>
                 </div>
             </div>
         </div>
@@ -134,7 +129,7 @@
                             <div class="timeline-badge"><i class="icon-suitcase"></i></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h3 class="timeline-title">Web Developer</h3>
+                                    <h3 class="timeline-title">Software Developer</h3>
                                     <span class="company">KILATECH - Web Development Company<br>September 2019 – Present</span>
                                 </div>
                                 <div class="timeline-body">
@@ -245,8 +240,8 @@
 								<i class="icon-link"></i>
 							</span>
                             <div class="feature-copy">
-                                <h3>Blockchain Development</h3>
-                                <p>I develop blockchain-based solutions. Looking to take part challanging project related to blockchain and cryptocurrency.</p>
+                                <h3>Software Development</h3>
+                                <p>I develop reliable and scalable software solutions for any OS, browser and device.</p>
                             </div>
                         </div>
                     </div>
@@ -460,8 +455,7 @@
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Hire Me!</h2>
-                    <p>I'm an Electronic Designer, Web-Developer, Mobile App Developer and UI/UX designer creating
-                        awesome products for my clients all around the globe.</p>
+                    <p>I am looking for opportunities to improve my skills while providing to the world what they need. Cheers!</p>
                 </div>
             </div>
         </div>
@@ -524,7 +518,25 @@
 </div>
 
 <script type="text/javascript">
-    function download() { window.open("cv_2020.pdf",'_blank'); }
+    function download_resume() { window.open("kusal_thiwanka_cv.pdf",'_blank'); }
+    function socialIconsClick(val) { 
+        switch(val) {
+            case 'facebook':
+                window.open("https://www.facebook.com/kusal.thiwanka",'_blank');
+                break;
+            case 'linkedin':
+                window.open("https://www.linkedin.com/in/kusal-thiwanka/",'_blank');
+                break;
+            case 'github':
+                window.open("https://github.com/KusalThiwanka",'_blank');
+                break;
+            case 'stackoverflow':
+                window.open("https://stackoverflow.com/users/11021308/kusal-thiwanka",'_blank');
+                break;
+            default:
+                window.open("mailto:mhkusalthiwanka@gmail.com");
+        }
+    }
 </script>
 
 <!-- jQuery -->
