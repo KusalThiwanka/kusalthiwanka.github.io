@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc6b4078.css",
+    "main.js": "/static/js/main.4f969a8c.js",
+    "static/media/about_img.jpeg": "/static/media/about_img.7953edc819da4be27ddb.jpeg",
+    "static/media/js.webp": "/static/media/js.e88983493a7a7f7f9061.webp",
+    "static/media/avatar3.jpg": "/static/media/avatar3.147a5e822be1de520beb.jpg",
+    "static/media/avatar2.jpg": "/static/media/avatar2.4eecd6bf0460720e9c8b.jpg",
+    "static/media/company-website-landing-page-react-responsive-mobile-friendly.jpg": "/static/media/company-website-landing-page-react-responsive-mobile-friendly.f5296542c3b0512f599c.jpg",
+    "static/media/video-undownloadble-protection-service-image.jpg": "/static/media/video-undownloadble-protection-service-image.1b7b7275356c5dfa76d9.jpg",
+    "static/media/avatar1.jpg": "/static/media/avatar1.5349636c1e889bb4a2b0.jpg",
+    "static/media/proposal-and-quatation-management-system.jpg": "/static/media/proposal-and-quatation-management-system.a252cd811048ae5a6c02.jpg",
+    "static/media/online-store-ecommerce-virtual-store-shopify.jpg": "/static/media/online-store-ecommerce-virtual-store-shopify.303b98de6f76532f4f03.jpg",
+    "static/media/react.png": "/static/media/react.44319306359c7112276d.png",
+    "static/media/website-landing page-web-page.jpg": "/static/media/website-landing page-web-page.42c879514f799114a6e7.jpg",
+    "static/media/security.png": "/static/media/security.948f3531752f72dbc4c0.png",
+    "static/media/os.png": "/static/media/os.450f989a9c1133da52ad.png",
+    "static/media/online-class-learning-management-system.jpg": "/static/media/online-class-learning-management-system.a02489ac5d17cbb82da0.jpg",
+    "static/media/pm.png": "/static/media/pm.79d04bf8ec459a032512.png",
+    "static/media/python.webp": "/static/media/python.acc8ce9948ae9387d19c.webp",
+    "static/media/typescript.webp": "/static/media/typescript.d05205e2f1accebb139f.webp",
+    "static/media/cloud.webp": "/static/media/cloud.9f30cad49b44abfe0971.webp",
+    "index.html": "/index.html",
+    "main.bc6b4078.css.map": "/static/css/main.bc6b4078.css.map",
+    "main.4f969a8c.js.map": "/static/js/main.4f969a8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc6b4078.css",
+    "static/js/main.4f969a8c.js"
+  ]
+}
